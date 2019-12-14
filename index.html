@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Spletna stran Mafijskega vikenda.">
+<meta name="keywords" content="mafijski vikend, zimska šola, fmf">
+<meta name="author" content="Jure Slak">
+
+<title>Mafijski vikend</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="shortcut icon" href="favicon.ico">
+<style>
+@import url('Lato-Regular.woff2');
+* {  padding: 0; margin: 0; }
+html, body {
+  height: 100%;
+  font-family: "Lato", "Georgia", sans-serif;
+}
+
+aside {
+  width: 340px;
+  min-height: 100%;
+/*  background: #f44336; */
+  background: #ffffff;
+/*  color: white; */
+  text-align: center;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+main {
+  margin-left: 350px;
+  background: #fff;
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 350px);
+  min-width: 600px;
+}
+
+ul { margin-left: 20px; }
+ul li { padding: 5px; }
+
+aside nav ul li {
+  height: 46px;
+  font-size: 1.3em;
+  text-align: left;
+  list-style: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+main section {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+main footer {
+  margin: 10px 30px;
+  padding-top: 10px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: #aaa;
+}
+
+.logo {
+  font-size: 5em;
+  padding-top: 20px;
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.sublogo {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-size: 2.25em;
+}
+.projectid {
+  font-size: 2.5em;
+}
+
+h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 2em;
+}
+h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 1.2em;
+}
+
+a, a:visited, a:hover, a:active {
+  color: #3366bb;
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 2em;
+}
+
+nav i {
+  float: left;
+  margin-right: 20px;
+}
+
+nav a, nav a:visited, nav a:hover, nav a:active { color: black; }
+
+p { margin-bottom: 12pt; }
+
+.right { position: relative; bottom: -4px; }
+
+img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+img.banner {
+  margin: 10px auto;
+}
+table.table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+table.table td, table.table th {
+  border: 1px solid;
+  padding: 5px 20px;
+}
+table.table tr.title {
+  background-color: #eee;
+}
+
+#form {
+  max-width: 650px;
+}
+
+/* mobile */
+@media only screen and (max-width: 951px) {
+  main {
+    position: static;
+    margin: 10px;
+    min-width: auto;
+    width: auto;
+    overflow: visible;
+  }
+  aside {
+    position: static;
+    min-height: auto;
+    width: auto;
+    box-shadow:
+  }
+  aside nav ul { margin: 0; }
+  aside nav ul li {
+    display: inline-block;
+  }
+  main section {
+    padding: 2%;
+    min-height: auto;
+  }
+  .sublogo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+</style>
+</head>
+
+<body>
+<aside>
+  <header>
+    <div class="logo"><a href="#"><img src="logo_fmf.png" alt="FMF logo"></a></div>
+    <div class="sublogo">Mafijski vikend<br>2020</div>
+    <!--    <div class="projectid">G018916N</div> -->
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home"><i class="material-icons">info</i> O vikendu</a></li>
+      <li><a href="#prijava"><i class="material-icons"> contact_mail</i> Prijava</a></li>
+      <li><a href="#program"><i class="material-icons">event</i> Program</a></li>
+      <li><a href="#lokacija"><i class="material-icons">location_city</i> Lokacija</a></li>
+    </ul>
+  </nav>
+</aside>
+<main>
+<section id="home">
+  <h1>Mafijski vikend</h1>
+  <img src="banner.png" alt="logotipi evropske noči raziskovalcev" class="banner" style="max-height: 150px">
+  <h2>O vikendu</h2>
+  <p>bla bla</p>
+  <p>bla bla</p>
+</section>
+
+<section id="prijava">
+  <h1>Prijava</h1>
+  <p>Na Mafijski piknik 2020 se lahko prijavite s spodnjim obrazcem ali na
+  <a href="https://forms.gle/oFdYSo1NCaUiYAzH8" target="_blank">tej povezavi</a>.
+  Po prijavi boste na vpisani email prejeli podatke za plačilo
+  kotizacije, potrdilo o plačilu kotizacije, pred vikendom pa še bolj podrobna
+  navodila.  Račun za plačilo boste prejeli ob prihodu na vikend.</p>
+  <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSczeSlW-E-3r2AfNGuDDAFrHjIqvz5C_tmshEaUgrpvHmTnxQ/viewform?embedded=true" width="100%" height="2200" frameborder="0" marginheight="0" marginwidth="0">Nalagam…</iframe>
+</section>
+
+<section id="program">
+  <h1>Program</h1>
+  <p>Mafijski vikend 2020 bo potekal 24., 25. in 26. januarja. Podroben program je na voljo v spodnji tabeli.</p>
+  <table class="table">
+    <tr class="title"><th colspan="3">Petek, 24. 1. 2020</th></tr>
+    <tr><td>18:30</td><td>Uvodni pozdrav</td></tr>
+    <tr><td>19:00</td><td>Predavanje 1</td></tr>
+    <tr><td>20:00</td><td>Predavanje 2</td></tr>
+    <tr><td>21:00</td><td>Večerja v kavarni Mafija</td></tr>
+    <tr><td>23:00</td><td>Zaključek prvega dne</td></tr>
+    <tr class="title"><th colspan="3">Sobota, 25. 1. 2020</th></tr>
+    <tr><td>18:30</td><td>Uvodni pozdrav</td></tr>
+    <tr><td>19:00</td><td>Predavanje 1</td></tr>
+    <tr><td>20:00</td><td>Predavanje 2</td></tr>
+    <tr><td>21:00</td><td>Večerja v kavarni Mafija</td></tr>
+    <tr class="title"><th colspan="3">Nedelja, 26. 1. 2020</th></tr>
+    <tr><td>18:30</td><td>Uvodni pozdrav</td></tr>
+    <tr><td>19:00</td><td>Predavanje 1</td></tr>
+    <tr><td>20:00</td><td>Predavanje 2</td></tr>
+    <tr><td>21:00</td><td>Večerja v kavarni Mafija</td></tr>
+  </table>
+
+</section>
+
+<section id="lokacija">
+  <h1>Lokacija</h1>
+  <p>Mafijski vikend poteka na Fakulteti za matematiko in fiziko v Ljubljani, v stavbi matematike:</p>
+  <figure>
+    <img src="matematika.png" alt="stavba matematike">
+    <figcaption>&nbsp;</figcaption>
+  </figure>
+  <p>Deloma poteka tudi v kavarni Mafija, na istem naslovu, ki je naveden in prikazan na spodnjem zemljevidu</p>
+  <address>
+    Fakulteta za matematiko in fiziko<br>
+    Jadranska ulica 21<br>
+    1000 Ljubljana<br>
+  </address>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d692.3624216411081!2d14.489695829248571!3d46.042127998694504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDAyJzMxLjciTiAxNMKwMjknMjQuOSJF!5e0!3m2!1sen!2ssi!4v1576352580349!5m2!1sen!2ssi" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
+
+<footer>
+  &copy; Fakulteta za matematiko in fiziko, 2019
+</footer>
+</main>
+</body>
+</html>
+<!--
+vim: set spelllang=sl:
+-->
