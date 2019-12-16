@@ -18,6 +18,7 @@ html, body {
   height: 100%;
   font-family: "Lato", "Georgia", sans-serif;
 }
+body { font-size: 1.1em; }
 
 aside {
   width: 340px;
@@ -55,6 +56,7 @@ aside nav ul li {
 main section {
   min-height: 100vh;
   padding: 30px;
+  max-width: 1000px;
 }
 
 main footer {
@@ -185,6 +187,7 @@ table.table tr.title {
       <li><a href="#home"><i class="material-icons">info</i> O vikendu</a></li>
       <li><a href="#prijava"><i class="material-icons"> contact_mail</i> Prijava</a></li>
       <li><a href="#program"><i class="material-icons">event</i> Program</a></li>
+      <li><a href="#delavnice"><i class="material-icons">build</i> Delavnice</a></li>
       <li><a href="#lokacija"><i class="material-icons">location_city</i> Lokacija</a></li>
     </ul>
   </nav>
@@ -192,10 +195,30 @@ table.table tr.title {
 <main>
 <section id="home">
   <h1>Mafijski vikend</h1>
-  <img src="banner.png" alt="logotipi evropske noči raziskovalcev" class="banner" style="max-height: 150px">
+  <figure>
+    <img src="banner.png" alt="logotipi evropske noči raziskovalcev" class="banner" style="max-height: 150px">
+    <figcaption>Dogodek je sofinanciran s strani projekta &ldquo;Evropska noč raziskovalcev – Humanistika, to si ti!&rdquo;</figcaption>
+  </figure>
   <h2>O vikendu</h2>
-  <p>bla bla</p>
-  <p>bla bla</p>
+  <figure style="float:right;"><img src="mafijec.png" alt="mafijec"></figure>
+  <p>Mafijski vikend je zimska šola matematike in fizike, namenjena dijakom vseh letnikov, ki poteka vsako leto
+  v vikendu konec januarja.</p>
+  <p>Dijaki se v času enega vikenda udeležijo dveh poljudnih predavanj in matematike in fizike, dveh matematičnih
+     ali fizikalnih delavnic in se družijo z vrstniki in zaposlenimi na Fakulteti za matematiko in fiziko. 
+     Vikend poteka v sproščenem vzdušju in je odlična priložnost za to, da dijaki bolje spoznajo kaj matematika in fizika
+     na univerzitetni ravni sploh sta, da študente in aktivne raziskovalce povprašajo o študiju in raziskavah, ali pa 
+     da en vikend preživijo z vrstniki s podobnimi interesi.</p>
+    
+    <p>Okvirni program Mafijskega vikenda 2020 je:<br><br>
+    <b>Petek, 24. 1. 2020 od 17h&ndash;21h:</b> Poljudni predavanji, večerja.<br>
+    <b>Sobota, 25. 1. 2020 od 9h&ndash;13h:</b> Delavnice po skupinah, kosilo.<br>
+    <b>Sobota, 25. 1. 2020 od 15h&ndash;20h:</b> Družabno popoldne, večerja.<br>
+    <b>Nedelja, 26. 1. 2020 od 9h&ndash;13h:</b> Delavnice po skupinah, kosilo.<br></p>
+    
+    <p>Podroben program je na voljo na zavihku <a href="#program">Program</a>. Kotizacija
+    za vikend znaša 20&thinsp;&euro; in pokriva približno stroške prehrane, ostalo krije fakulteta.
+    <p>Na vikend se prijavite <a href="#prijava">tukaj</a>, za vsa dodatna vprašanja pa lahko kontaktirate
+    Jureta Slaka na <a href="mailto:jure.slak@fmf.uni-lj.si">jure.slak@fmf.uni-lj.si</a>.
 </section>
 
 <section id="prijava">
@@ -203,8 +226,8 @@ table.table tr.title {
   <p>Na Mafijski piknik 2020 se lahko prijavite s spodnjim obrazcem ali na
   <a href="https://forms.gle/oFdYSo1NCaUiYAzH8" target="_blank">tej povezavi</a>.
   Po prijavi boste na vpisani email prejeli podatke za plačilo
-  kotizacije, potrdilo o plačilu kotizacije, pred vikendom pa še bolj podrobna
-  navodila.  Račun za plačilo boste prejeli ob prihodu na vikend.</p>
+  kotizacije (direktno nakazilo), potrdilo o plačilu kotizacije, pred vikendom pa še bolj podrobna
+  navodila. Račun za plačilo boste prejeli ob prihodu na vikend.</p>
   <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSczeSlW-E-3r2AfNGuDDAFrHjIqvz5C_tmshEaUgrpvHmTnxQ/viewform?embedded=true" width="100%" height="2200" frameborder="0" marginheight="0" marginwidth="0">Nalagam…</iframe>
 </section>
 
@@ -213,23 +236,31 @@ table.table tr.title {
   <p>Mafijski vikend 2020 bo potekal 24., 25. in 26. januarja. Podroben program je na voljo v spodnji tabeli.</p>
   <table class="table">
     <tr class="title"><th colspan="3">Petek, 24. 1. 2020</th></tr>
-    <tr><td>18:30</td><td>Uvodni pozdrav</td></tr>
-    <tr><td>19:00</td><td>Predavanje 1</td></tr>
-    <tr><td>20:00</td><td>Predavanje 2</td></tr>
-    <tr><td>21:00</td><td>Večerja v kavarni Mafija</td></tr>
-    <tr><td>23:00</td><td>Zaključek prvega dne</td></tr>
+    <tr><td>17:00</td><td>Zbor in uvodni nagovor</td></tr>
+    <tr><td>17:30</td><td>Predavanje prof. Barbare Drinovec Drnovšek</td></tr>
+    <tr><td>18:30</td><td>Predavanje prof. XYZ</td></tr>
+    <tr><td>19:30</td><td>Predstavitev sobotnih in nedeljskih delavnic*</td></tr>
+    <tr><td>20:00</td><td>Večerja v kavarni Mafija</td></tr>
+    <tr><td>21:00</td><td>Zaključek prvega dne</td></tr>
     <tr class="title"><th colspan="3">Sobota, 25. 1. 2020</th></tr>
-    <tr><td>18:30</td><td>Uvodni pozdrav</td></tr>
-    <tr><td>19:00</td><td>Predavanje 1</td></tr>
-    <tr><td>20:00</td><td>Predavanje 2</td></tr>
-    <tr><td>21:00</td><td>Večerja v kavarni Mafija</td></tr>
+    <tr><td>9:00</td><td>Delavnice v manjših skupinah*</td></tr>
+    <tr><td>12:00</td><td>Kosilo v kavarni Mafija in odmor</td></tr>
+    <tr><td>15:00</td><td>Mafijska avantura in večerja</td></tr>
+    <tr><td>20:00</td><td>Zaključek drugega dne</td></tr>
     <tr class="title"><th colspan="3">Nedelja, 26. 1. 2020</th></tr>
-    <tr><td>18:30</td><td>Uvodni pozdrav</td></tr>
-    <tr><td>19:00</td><td>Predavanje 1</td></tr>
-    <tr><td>20:00</td><td>Predavanje 2</td></tr>
-    <tr><td>21:00</td><td>Večerja v kavarni Mafija</td></tr>
+    <tr><td>9:00</td><td>Delavnice v manjših skupinah*</td></tr>
+    <tr><td>12:00</td><td>Kosilo v kavarni Mafija in izpolnjevanje anket</td></tr>
+    <tr><td>13:00</td><td>Zaključek Mafijskega vikenda</td></tr>
   </table>
+  <p>
+    * V soboto in nedeljo bodo na sporedu iste delavnice. Vsak dijak bo tako lahko izmed šestih ponujenih tem izbral dve.
+    Opisi delavnic so na voljo na zavihku <a href="#delavnice">Delavnice</a>.
+  </p>
+</section>
 
+<section id="delavnice">
+  <h1>Delavnice</h1>
+  <p>TODO</p>
 </section>
 
 <section id="lokacija">
@@ -239,13 +270,17 @@ table.table tr.title {
     <img src="matematika.png" alt="stavba matematike">
     <figcaption>&nbsp;</figcaption>
   </figure>
-  <p>Deloma poteka tudi v kavarni Mafija, na istem naslovu, ki je naveden in prikazan na spodnjem zemljevidu</p>
+  <p>Deloma poteka tudi v kavarni Mafija, na istem naslovu:</p>
   <address>
     Fakulteta za matematiko in fiziko<br>
     Jadranska ulica 21<br>
     1000 Ljubljana<br>
   </address>
   <br>
+  <p>
+    Če se pripeljete z vlakom ali avtobusom, lahko za pot od glavne postaje do fakultete uporabite Ljubljanski potniški promet: linija št. 1, smer: Mestni log, postajališče Jadranska, 
+    blizu pa ustavlja tudi linija 6 (postajališče Hajdrihova). Za uporabo mestnih avtobusov potrebujete kartico Urbana. V času vikenda bo na voljo tudi parkiranje pred fakulteto.
+  </p>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d692.3624216411081!2d14.489695829248571!3d46.042127998694504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDAyJzMxLjciTiAxNMKwMjknMjQuOSJF!5e0!3m2!1sen!2ssi!4v1576352580349!5m2!1sen!2ssi" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </section>
 
